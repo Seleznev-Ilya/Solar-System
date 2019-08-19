@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <!--<link rel="shortcut icon" type="image/x-icon" href='Доделать'>-->
+    <!--<link rel="stylesheet" href="jquery">-->
+</head>
+
+<body>
+<main>
+    <div id="SolarSystem" class="container">
+        <div class="Sun_system"></div>
+
+        <div class="planet_Sun">
+            <div id="Sun"></div>
+        </div>
+
+        <div class="planet_Mercury planet">
+            <div id="Mercury"></div>
+        </div>
+
+        <div class="planet_Earth planet">
+            <div id="Earth">
+                <div class="EarthSatellite">
+                    <div class="satellite_moon">
+                        <div id="Moon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet_Mars planet">
+            <div id="Mars"></div>
+        </div>
+
+        <div class="planet_Jupiter planet">
+            <div id="Jupiter"></div>
+        </div>
+
+        <div class="planet_Saturn planet">
+            <div id="Saturn"></div>
+        </div>
+
+        <div class="planet_Uranus planet">
+            <div id="Uranus"></div>
+        </div>
+
+        <div class="planet_Neptune planet">
+            <div id="Neptune"></div>
+        </div>
+
+        <div class="planet_Pluton planet">
+            <div id="Pluton"></div>
+        </div>
+    </div>
+</main>
+
+<script>
+    var planets = document.getElementsByClassName('planet');
+
+    var x0 = getCoordinateX(document.getElementsByClassName('planet_Sun')[0]);
+    var y0 = getCoordinateY(document.getElementsByClassName('planet_Sun')[0]);
+
+
+
+
+    function rotateElement(planet) {
+        var x = getCoordinateX(planet);
+        var y = getCoordinateY(planet);
+
+        var radius = Math.sqrt(x * x  + y * y)  ;
+        var oldAngle = Math.atan2(y - y0, x - x0);
+        var radian_angle = 0.0174533;
+        var newAngle = oldAngle +  radian_angle ;
+
+        var newX = Math.cos(newAngle) * radius;
+        var newY = Math.sin(newAngle) * radius;
+
+        planet.style.top = newY + 'px';
+        planet.style.left = newX + 'px';
+    }
+
+    function getCoordinateX(element) {
+        return +window.getComputedStyle(element, null).getPropertyValue('left').replace('px', '');
+    }
+
+    function getCoordinateY(element) {
+        return +window.getComputedStyle(element, null).getPropertyValue('top').replace('px', '');
+    }
+
+    var frequency = 60;
+
+    setInterval(function () {
+        for(var i = 0; i < planets.length; i++) {
+            var planet = planets[i];
+            rotateElement(planet);
+        }
+    }, frequency);
+</script>
+
+
+</body>
+</html>

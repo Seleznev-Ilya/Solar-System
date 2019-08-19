@@ -1,0 +1,430 @@
+body{
+    background-image: url("../Image/bg/bg2.jpg");
+}
+.Sun_system{
+    position: relative;
+}
+/****************************************************** SUN************/
+.planet_Sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(246, 156, 38, .5) inset,
+    0 0 40px rgba(237,233, 33, 1);
+    height: 90px;
+    width: 90px;
+    background-color: yellow;
+    /*background-image: url("../Image/sun.jpg");*/
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Sun:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color: rgba(245, 245, 245, .2) transparent transparent rgba(245, 245, 245, .2);
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: -15px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Sun:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: -45px;
+    left: 45px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Mercury************/
+.planet_Mercury {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+        box-shadow: -10px -10px 2.5px -10px rgba(68, 67, 2, 1) inset;
+    height: 10px;
+    width: 10px;
+    background-color: chocolate;
+    /*background-image: url("../Image/sun.jpg");*/
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Mercury:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  rgba(245, 245, 245, .2) transparent  transparent ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Mercury:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 15px;
+    left: 34px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** VENUS************/
+.planet_Venus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 170px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 10px 6px 20px -5px rgba(35, 34, 2, 1) inset;
+    height: 15px;
+    width: 15px;
+    background-color: chocolate;
+    /*background-image: url("../Image/sun.jpg");*/
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Venus:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  transparent  transparent rgba(245, 245, 245, .2) ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 18px;
+    left: -14px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Venus:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 15px;
+    left: -74px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** EARTH************/
+.planet_Earth {
+    position: absolute;
+    top: -20px;
+    left: 225px;
+    right: 0;
+    bottom: 0;margin: auto;
+    border-radius: 50%;
+    box-shadow:  -10px -5px 5px -5px rgba(37, 36, 2, 1) inset;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    background-image: url("../Image/Earth.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Earth:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color: rgba(245, 245, 245, .2) transparent transparent rgba(245, 245, 245, .2);
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Earth:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: -45px;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+}
+.EarthSatellite{
+    position: relative;
+}
+
+/****************************************************** Mars************/
+.planet_Mars{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -7px -12px 5px -5px rgba(17, 16, 2, 1) inset;
+    height: 30px;
+    width: 30px;
+    background: #dd4b39 url("../Image/Murs.jpg") no-repeat center;
+    background-size: cover ;
+}
+.planet_Mars:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  rgba(245, 245, 245, .2) transparent  transparent ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Mars:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 15px;
+    left: 34px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Jupiter************/
+.planet_Jupiter{
+    position: absolute;
+    top: 300px;
+    left: 470px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -7px -12px 25px 9px rgba(17, 16, 2, 1) inset;
+    height: 144px;
+    width: 144px;
+    background-size: cover ;
+    background: darksalmon url("../Image/Jupiter.png") no-repeat center;
+}
+.planet_Jupiter:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  rgba(245, 245, 245, .2) transparent  transparent ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 118px;
+    left: 151px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Jupiter:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 115px;
+    left: 159px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Saturn************/
+.planet_Saturn{
+    position: absolute;
+    top: 430px;
+    left: 0;
+    right: 650px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 30px -32px 35px 7px rgba(17, 16, 2, 2) inset;
+    height: 190px;
+    width: 190px;
+    background: #e95950 url("../Image/saturn.jpg") no-repeat center;
+    background-size: cover ;
+}
+.planet_Saturn:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color: rgba(245, 245, 245, .2) transparent transparent rgba(245, 245, 245, .2);
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: -15px;
+    left: 120px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Saturn:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: -45px;
+    left: 115px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Uranus************/
+.planet_Uranus{
+    position: absolute;
+    top: -200px;
+    left: 1200px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -17px 5px 45px 15px rgba(17, 16, 2, 2) inset;
+    height: 90px;
+    width: 90px;
+    background-color: #55acee;
+    background-image: url("../Image/uran.png");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Uranus:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  transparent  transparent rgba(245, 245, 245, .2) ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 68px;
+    left: -14px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Uranus:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 65px;
+    left: -74px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Neptune************/
+.planet_Neptune{
+    position: absolute;
+    top: -300px;
+    left: 600px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -17px 12px 25px 2px rgba(17, 16, 2, 1) inset;
+    height: 77px;
+    width: 77px;
+    background: #e95950 url("../Image/Neptune.jpg") no-repeat center;
+    background-size: cover ;
+}
+.planet_Neptune:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color: transparent  transparent rgba(245, 245, 245, .2)  rgba(245, 245, 245, .2) ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 28px;
+    left: -14px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Neptune:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 10px;
+    left: -74px;
+    right: 0;
+    bottom: 0;
+}
+/****************************************************** Pluton************/
+.planet_Pluton{
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 1300px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow:  10px 6px 20px -5px rgba(35, 34, 2, 1) inset;
+    height: 15px;
+    width: 15px;
+    background-color: chocolate;
+    /*background-image: url("../Image/sun.jpg");*/
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planet_Pluton:hover:before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-color:rgba(245, 245, 245, .2)  rgba(245, 245, 245, .2) transparent  transparent ;
+    border-style: solid;
+    border-width: 4px 4px ;
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    right: 0;
+    bottom: 0;
+}
+.planet_Pluton:hover:after{
+    content: '';
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, .2);
+    position: absolute;
+    top: 13px;
+    left: 34px;
+    right: 0;
+    bottom: 0;
+}
+
+
